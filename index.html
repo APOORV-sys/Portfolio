@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoorv Gupta — AI/ML Engineer & Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Apoorv Gupta, a Computer Science undergraduate at VIT Bhopal specializing in AI/ML systems and full-stack web applications.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Black+Ops+One&family=Bungee&family=Permanent+Marker&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Playwrite+GB+S+Guides:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <h1 class="loader-title" id="loader-title-text">Apoorv Gupta</h1>
+            <div class="loader-bar-container">
+                <div id="loader-bar" class="loader-bar"></div>
+            </div>
+            <p id="loader-text" class="loader-text">Loading experience 0%</p>
+        </div>
+    </div>
+
+    <!-- Vertical Sidebar Navigation -->
+    <nav class="sidebar-nav">
+        <a href="#hero" class="nav-link active" data-tooltip="Home">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <a href="#about" class="nav-link" data-tooltip="About">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#skills" class="nav-link" data-tooltip="Skills">
+            <i class="fa-solid fa-code"></i>
+        </a>
+        <a href="#projects" class="nav-link" data-tooltip="Projects">
+            <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a href="#credentials" class="nav-link" data-tooltip="Credentials">
+            <i class="fa-solid fa-award"></i>
+        </a>
+        <a href="#contact" class="nav-link" data-tooltip="Contact">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <div class="sidebar-divider"></div>
+        <a href="mailto:ag5098015@gmail.com" class="hire-btn" data-tooltip="Hire Me">
+            <i class="fa-solid fa-paper-plane"></i>
+        </a>
+    </nav>
+
+    <!-- Background Sticky Canvas -->
+    <div class="canvas-container">
+        <canvas id="scroll-canvas"></canvas>
+        <div class="vignette"></div>
+    </div>
+
+    <!-- Scrollable Content Overlay -->
+    <main class="scroll-wrapper">
+        <!-- Section 1: Hero -->
+        <section id="hero" class="scroll-section hero-section">
+            <div class="section-content">
+                <span class="eyebrow">AI/ML ENGINEER &amp; FULL-STACK DEVELOPER</span>
+                <h1 class="hero-title">Hey , I am<br>Apoorv</h1>
+                <p class="hero-subtitle">B.Tech undergraduate at VIT Bhopal. Building production-grade AI systems, medical diagnostics screening, and custom LLM solutions.</p>
+                
+                <div class="social-links">
+                    <a href="tel:+918081778068" class="social-icon" title="Call Me"><i class="fa-solid fa-phone"></i> +91 8081778068</a>
+                    <a href="mailto:ag5098015@gmail.com" class="social-icon" title="Email Me"><i class="fa-solid fa-envelope"></i> ag5098015@gmail.com</a>
+                    <a href="https://linkedin.com" target="_blank" class="social-icon" title="LinkedIn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com" target="_blank" class="social-icon" title="GitHub"><i class="fa-brands fa-github"></i> GitHub</a>
+                </div>
+
+                <div class="scroll-indicator">
+                    <span class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </span>
+                    <span class="scroll-indicator-text">Scroll to explore portfolio</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: About & Education -->
+        <section id="about" class="scroll-section text-left">
+            <div class="section-content glass-card about-card">
+                <span class="step-num">01 / PROFILE</span>
+                <h2>About Me</h2>
+                <p class="profile-desc">Computer Science undergraduate at VIT Bhopal (CGPA: 8.69) with hands-on experience building AI/ML systems and full-stack web applications. Expert in fine-tuning LLMs, building custom RAG pipelines, and deploying robust clinical-grade solutions.</p>
+                
+                <div class="education-timeline">
+                    <h3>Education</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="institution">Woodbine Gardenia School</span>
+                            <span class="period">2021 - 2022</span>
+                        </div>
+                        <div class="timeline-detail">High School (Class X) &bull; <strong class="highlight-text">Score: 92%</strong></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="institution">Mittal International School</span>
+                            <span class="period">2023 - 2024</span>
+                        </div>
+                        <div class="timeline-detail">Intermediate (Class XII) &bull; <strong class="highlight-text">Score: 86%</strong></div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <span class="institution">Vellore Institute of Technology, Bhopal</span>
+                            <span class="period">2024 - 2028</span>
+                        </div>
+                        <div class="timeline-detail">B.Tech in Computer Science &bull; <strong class="highlight-text">CGPA: 8.69</strong> (Present)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Technical Skills -->
+        <section id="skills" class="scroll-section text-right">
+            <div class="section-content glass-card skills-card">
+                <span class="step-num">02 / SKILLSET</span>
+                <h2>Technical Toolkit</h2>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>AI / ML</h4>
+                        <div class="skill-tags">
+                            <span>Python</span><span>TensorFlow</span><span>Keras</span><span>PyTorch</span>
+                            <span>HuggingFace</span><span>Scikit-learn</span><span>QLoRA/PEFT</span>
+                            <span>LangChain</span><span>RAG Pipelines</span><span>Grad-CAM</span>
+                            <span>FAISS/Chroma</span><span>Mistral 7B</span><span>Swin Transformer</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Full Stack</h4>
+                        <div class="skill-tags">
+                            <span>React.js</span><span>HTML5 / CSS3</span><span>FastAPI</span>
+                            <span>Supabase</span><span>REST APIs</span><span>PWA</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Languages &amp; Tools</h4>
+                        <div class="skill-tags">
+                            <span>Python</span><span>C / C++</span><span>Java</span><span>Bash</span>
+                            <span>PowerShell</span><span>OpenCV</span><span>Pandas</span><span>NumPy</span>
+                            <span>Matplotlib</span><span>Faker</span><span>Git</span><span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Projects -->
+        <section id="projects" class="scroll-section text-left project-section">
+            <div class="section-content glass-card project-card-large">
+                <span class="step-num">03 / PROJECTS</span>
+                <h2>Featured Work</h2>
+
+                <div class="projects-container">
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3>OptaNex — AI-Powered Eye Care PWA</h3>
+                            <span class="project-tech">React.js &bull; FastAPI &bull; Supabase</span>
+                        </div>
+                        <p class="project-desc">A full-stack Progressive Web App providing a unified, privacy-first diagnostic platform (DPDP 2023 compliant) with 5 integrated modules:</p>
+                        <ul class="project-bullets">
+                            <li><strong>OptiScreen:</strong> AI screening module detecting Diabetic Retinopathy and AMD from fundus images using an ensemble of EfficientNetB0, CNN, and Swin Transformers (Grad-CAM explainability).</li>
+                            <li><strong>Clinical Accessibility:</strong> Built digital Snellen Chart and Pseudo-Ishihara test, removing the need for proprietary clinical software.</li>
+                            <li><strong>GlareGuard &amp; PrescriptTracker:</strong> Automated blue light break reminders and real-time synchronized prescription vaults.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3>LLM-Based Diabetes Recommender (Dia-Bot)</h3>
+                            <span class="project-tech">Mistral 7B &bull; QLoRA &bull; RAG &bull; FAISS</span>
+                        </div>
+                        <p class="project-desc">A clinical-grade assistant utilizing fine-tuned open-source models to deliver personalized diabetes guidance:</p>
+                        <ul class="project-bullets">
+                            <li><strong>Efficient Inference:</strong> Fine-tuned Mistral 7B using QLoRA (4-bit quantization), reducing memory footprint by ~60% to run on consumer 8GB VRAM.</li>
+                            <li><strong>Standards RAG:</strong> Extracted and vectorized the 281-page "Standards of Care 2024" PDF into 500+ segments for sub-second evidence-based answers.</li>
+                            <li><strong>HIPAA Compliance:</strong> Built synthetic patient record generator using Faker library to guarantee data privacy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Achievements & Certifications -->
+        <section id="credentials" class="scroll-section text-right credentials-section">
+            <div class="section-content glass-card credentials-card">
+                <span class="step-num">04 / CREDENTIALS</span>
+                <h2>Achievements &amp; Certificates</h2>
+                
+                <div class="credentials-tabs">
+                    <div class="credential-group">
+                        <h3>National Rankings</h3>
+                        <ul class="list-credentials">
+                            <li><span>NFSU (National Forensic Science University) 2024</span> <strong class="badge">Rank 81</strong></li>
+                            <li><span>IAT (IISER Aptitude Test) 2024</span> <strong class="badge">Rank 659</strong></li>
+                            <li><span>NEST 2024</span> <strong class="badge">Rank 1334</strong></li>
+                            <li><span>HackWise Hackathon National Finalist</span> <strong class="badge">Top 30 (Top 1.4%)</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="credential-group">
+                        <h3>Certifications</h3>
+                        <ul class="list-certs">
+                            <li>
+                                <span class="cert-title">NPTEL Elite - Market Analytics (IIT-K)</span>
+                                <span class="cert-info">Score: 87% | May 2026</span>
+                            </li>
+                            <li>
+                                <span class="cert-title">NPTEL Elite - Cloud Computing (IIT-K)</span>
+                                <span class="cert-info">Score: 76% | Jan 2025</span>
+                            </li>
+                            <li>
+                                <span class="cert-title">Fundamentals of AI and ML - VIT</span>
+                                <span class="cert-info">Apr 2025</span>
+                            </li>
+                            <li>
+                                <span class="cert-title">Programming in Java - VIT</span>
+                                <span class="cert-info">Sep 2025</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Contact -->
+        <section id="contact" class="scroll-section contact-section">
+            <div class="section-content glass-card contact-card">
+                <span class="step-num">05 / GET IN TOUCH</span>
+                <h2>Let's Build Something Great</h2>
+                <p>Feel free to reach out for collaboration, project inquiries, or opportunities in AI/ML and full-stack development.</p>
+                
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <textarea placeholder="Tell me about your project or inquiry" rows="4" required></textarea>
+                    <button type="submit" class="btn btn-gradient">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
