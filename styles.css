@@ -95,6 +95,7 @@ h1, h2, h3, h4 {
     animation: fade-in-letter 1.4s forwards ease-in-out;
 }
 
+
 @keyframes fade-in-letter {
     to {
         opacity: 1;
