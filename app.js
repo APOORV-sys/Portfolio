@@ -1,3 +1,9 @@
+// Force scroll restoration to manual and scroll to top immediately on load
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 // Canvas Setup & Configuration
 const canvas = document.getElementById('scroll-canvas');
 const ctx = canvas.getContext('2d');
@@ -184,6 +190,9 @@ function animate() {
 
 // Start Application Lifecycle
 preloadImages(() => {
+    // Ensure we are scrolled to the top when the loading screen completes
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    
     // Initialize Canvas Dimensions
     resizeCanvas();
     window.addEventListener('resize', resizeCanvas);
